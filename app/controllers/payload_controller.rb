@@ -2,7 +2,7 @@ class PayloadController < ApplicationController
   def index
   end
 
-  def create
+  def post
 	  push = JSON.parse(request.body.read)
 	  puts "I got some JSON: #{push.inspect}"
   end
