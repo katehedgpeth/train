@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'payload/index'
+#  get 'payload/index'
   post 'payload/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
