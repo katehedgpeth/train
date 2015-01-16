@@ -1,11 +1,9 @@
 class PayloadController < ApplicationController
-  def index
-  end
 
-  def post
-	  push = JSON.parse(request.body.read)
-	  puts "I got some JSON: #{push.inspect}"
-  end
+	def github_callback
+		render plain params[:push]
+	end
+
 end
 
 
