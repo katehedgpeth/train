@@ -1,7 +1,7 @@
 class PayloadController < ApplicationController
 
 	def github_callback
-		render plain params[:push]
+		puts params[:push]
 	end
 
 end
